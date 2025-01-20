@@ -1,0 +1,122 @@
+
+# Python Project Naming Conventions
+
+---
+
+## **1. Project Name**
+- Use **short, descriptive, and meaningful names**.
+- Use **lowercase letters** with words separated by hyphens (`-`), as it is preferred for PyPI packages.
+- Avoid underscores (`_`) for project names because PyPI prefers hyphen-separated names.
+
+**Example:**
+- Good: `flask-todo-app`, `data-processor`, `my-awesome-tool`
+- Avoid: `FlaskToDoApp`, `data_processor`
+
+---
+
+## **2. Package Name**
+- Use **lowercase letters** and separate words with underscores (`_`).
+- Keep the name simple and indicative of the functionality.
+- Avoid using hyphens (`-`) in package names.
+
+**Example:**
+- Good: `data_analysis`, `task_manager`
+- Avoid: `DataAnalysis`, `task-manager`
+
+---
+
+## **3. Module Names**
+- Use **lowercase letters** and underscores (`_`) if the name has multiple words.
+- Names should be short but descriptive.
+
+**Example:**
+- Good: `views.py`, `utils.py`, `data_handler.py`
+- Avoid: `Views.py`, `utilsFunctions.py`
+
+---
+
+## **4. Class Names**
+- Use **CamelCase** (PascalCase) for class names.
+- The name should represent what the class does or represents.
+
+**Example:**
+- Good: `TaskManager`, `DataProcessor`
+- Avoid: `taskmanager`, `data_processor`
+
+---
+
+## **5. Variable Names**
+- Use **snake_case** (lowercase letters with underscores).
+- Choose meaningful names that clearly indicate the variable's purpose.
+
+**Example:**
+- Good: `task_list`, `max_value`
+- Avoid: `TaskList`, `maxValue`
+
+---
+
+## **6. Function Names**
+- Use **snake_case** (lowercase letters with underscores).
+- Names should describe the function’s purpose or behavior.
+
+**Example:**
+- Good: `calculate_total`, `get_user_data`
+- Avoid: `CalculateTotal`, `getUserData`
+
+---
+
+## **7. Constants**
+- Use **ALL_CAPS** with words separated by underscores.
+- Define constants at the top of the module.
+
+**Example:**
+- Good: `MAX_RETRIES`, `DEFAULT_TIMEOUT`
+- Avoid: `MaxRetries`, `default_timeout`
+
+---
+
+## **8. File and Directory Names**
+- Use **lowercase letters** with words separated by underscores (`_`).
+- Keep directory names short and representative of their contents.
+
+**Example:**
+- Good: `templates/`, `static/`, `data_files/`
+- Avoid: `Templates/`, `StaticFiles/`
+
+---
+
+## **9. Test Files**
+- Prefix test files and directories with `test_`.
+- The name should clearly relate to the file or functionality being tested.
+
+**Example:**
+- Good: `test_views.py`, `test_data_handler.py`
+- Avoid: `ViewsTest.py`, `dataHandlerTest.py`
+
+---
+
+## **10. Virtual Environment**
+- Use a standard name like `venv` or `.venv` for the virtual environment directory.
+- Avoid including it in version control.
+
+**Example:**
+- Good: `venv/`, `.venv/`
+- Avoid: `my_venv/`
+
+---
+
+### Summary Table
+| **Element**         | **Convention**      | **Example**              |
+|----------------------|---------------------|--------------------------|
+| **Project Name**     | lowercase-hyphen    | `my-awesome-tool`        |
+| **Package Name**     | lowercase_snake_case | `data_processor`         |
+| **Module Name**      | lowercase_snake_case | `utils.py`               |
+| **Class Name**       | CamelCase           | `TaskManager`            |
+| **Function Name**    | snake_case          | `calculate_total`        |
+| **Variable Name**    | snake_case          | `task_list`              |
+| **Constant Name**    | ALL_CAPS            | `MAX_RETRIES`            |
+| **Test Files**       | prefix with `test_` | `test_utils.py`          |
+
+---
+
+Adhering to these conventions helps maintain clean, professional, and Pythonic codebases.
